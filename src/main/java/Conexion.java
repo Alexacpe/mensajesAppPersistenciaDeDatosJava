@@ -9,9 +9,9 @@ public class Conexion {
         try {
             //los parametros que se reciben son los datos de conexion a la base de datos
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensajes_app","root","");
-            if (connection != null){
+            /*if (connection != null){
                 System.out.println("Conexion a la base de datos fue exitosa");
-            }
+            }*/
             //catch es para manejar la excepcion si no se pudo conectar para enviar el mensaje de error
         }catch (SQLException e){
             System.out.println(e);
